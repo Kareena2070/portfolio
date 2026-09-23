@@ -12,15 +12,11 @@ function HeroSection({ img }) {
             </h1>
 
             <h2 className="text-xl font-semibold text-slate-700 mt-4">
-              Frontend Developer | Building Fast, Modern & SEO-Friendly Web
-              Applications
+              Software Developer | Full Stack Engineer
             </h2>
 
             <p className="text-lg text-slate-600 mt-6 leading-relaxed max-w-xl">
-              I build modern, responsive, and SEO-friendly web applications
-              using React, Next.js, JavaScript, and TypeScript. I enjoy turning
-              ideas into real products with clean UI, API integrations, and
-              performance-focused development.
+              I build production-ready web applications across frontend, backend, APIs, and databases. I work with React, Next.js, Node.js, Express.js, and MongoDB to turn real product requirements into reliable, user-friendly software.
             </p>
 
             {/* Buttons */}
@@ -53,15 +49,15 @@ function HeroSection({ img }) {
               </span>
 
               <span className="px-4 py-2 bg-white rounded-full shadow text-sm">
-                TypeScript
+                Node.js
               </span>
 
               <span className="px-4 py-2 bg-white rounded-full shadow text-sm">
-                Tailwind CSS
+                Express
               </span>
 
               <span className="px-4 py-2 bg-white rounded-full shadow text-sm">
-                API Integration
+                MongoDB 
               </span>
             </div>
           </div>
