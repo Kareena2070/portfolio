@@ -7,103 +7,32 @@ import foaFood from "../assets/foaFood.png";
 
 function ProjectSection() {
   const projects = [
-    {
-      title: "E-commerce Storefront - FOA Food",
-      description:
-        "Built a responsive e-commerce storefront using Next.js and TypeScript with reusable components, global state management (auth, cart, location), serverless APIs for geocoding and distance-based filtering, and optimized dynamic product and category pages.",
-      techStack: "Next.js, TypeScript, tailwind, react.js",
-      image: foaFood,
-      github: "https://github.com/Kareena2070/E_Commerce",
-      demo: "https://e-commerce-5xzd.vercel.app/",
-    },
-
-    {
-      title: "SavorySpace - Recipe App",
-      description:
-        "A dynamic recipe management app where users can add, view, and save unique recipes. Features login/signup, API-based storage, and a responsive UI built using DOM manipulation.",
-      techStack: "HTML, CSS, JavaScript,React, SheetDB API",
-      image: savorySpace,
-      github: "https://github.com/Kareena2070/SavorySpace-recipeApp.git",
-      demo: "https://savoryspace.netlify.app/",
-    },
-
-    {
-      title: "Lazarev",
-      description:
-        "Implemented interactive animations with vanilla JS and GSAP (hover nav, marquee carousel). Improved UX with accessible details toggles, hover-follow parallax images, and progressive reveals. Added multimedia interactions: clickable showreel and hover-autoplay portfolio videos.",
-      techStack: "HTML, CSS, JavaScript (DOM)",
-      image: lazarev,
-      github:
-        "https://github.com/Kareena2070/HTML-CSS-min-projec/tree/main/calculator",
-      demo: "https://lazarev-k.netlify.app",
-    },
-
-    {
-      title: "World Countries Data Visualization",
-      description:
-        "Interactive web app displaying 250+ countries with search and sort by name, capital, or population. Features dynamic country cards and population bar charts using JavaScript, HTML, CSS, and Chart.js.",
-      techStack: "JavaScript DOM manipulation, HTML, CSS, and Chart.js",
-      image: worldCountriesData,
-      github: "https://github.com/Kareena2070/Countries-data",
-      demo: "https://kareena2070.github.io/Countries-data/",
-    },
-
-    {
-      title: "GalleryHive - Interactive Image Gallery",
-      description:
-        "A dynamic web app for uploading, categorizing, and viewing images in a Pinterest-style gallery. Features include user authentication, search, category creation, and responsive Masonry layout for seamless browsing.",
-      techStack: "HTML, CSS, JavaScript, LocalStorage, Font Awesome",
-      image: galleryHive,
-      github: "https://github.com/Kareena2070/GalleryHive",
-      demo: "https://kareena2070.github.io/GalleryHive/",
-    },
-
-    {
-      title: "Interactive Love Quiz Web App",
-      description:
-        "A playful multi-page web app where users navigate through a series of 'Yes/No' questions to reveal a fun love message. Each page displays unique animations and prompts, creating an engaging interactive experience.",
-      techStack: "HTML, CSS, JavaScript, WebP images",
-      image: loveQuiz,
-      github: "https://github.com/Kareena2070/project-do-you-love-me-",
-      demo: "https://kareena2070.github.io/project-do-you-love-me-/",
-    },
+    { title: "E-commerce Storefront — FOA Food", description: "A responsive storefront built with reusable components, shared auth, cart and location state, geocoding APIs, and dynamic product and category pages.", stack: "Next.js / TypeScript / Tailwind CSS", image: foaFood, demo: "https://e-commerce-5xzd.vercel.app/", github: "https://github.com/Kareena2070/E_Commerce" },
+    { title: "SavorySpace", description: "A recipe app for adding, exploring and saving recipes, with account flows and API-backed data.", stack: "HTML / CSS / JavaScript / React / SheetDB API", image: savorySpace, demo: "https://savoryspace.netlify.app/", github: "https://github.com/Kareena2070/SavorySpace-recipeApp.git" },
+    { title: "Lazarev", description: "An animated agency-site recreation with interactive navigation, carousels, parallax imagery and progressive reveals.", stack: "HTML / CSS / JavaScript / GSAP", image: lazarev, demo: "https://lazarev-k.netlify.app", github: "https://github.com/Kareena2070/HTML-CSS-min-projec/tree/main/calculator" },
+    { title: "World Countries Data", description: "An interactive explorer for 250+ countries, with search, sorting, country cards and population visualizations.", stack: "JavaScript / HTML / CSS / Chart.js", image: worldCountriesData, demo: "https://kareena2070.github.io/Countries-data/", github: "https://github.com/Kareena2070/Countries-data" },
+    { title: "GalleryHive", description: "A Pinterest-style image gallery with uploads, categories, authentication, search and a responsive masonry layout.", stack: "HTML / CSS / JavaScript / LocalStorage", image: galleryHive, demo: "https://kareena2070.github.io/GalleryHive/", github: "https://github.com/Kareena2070/GalleryHive" },
+    { title: "Interactive Love Quiz", description: "A playful multi-page experience with animated prompts and a lighthearted message at the end of the journey.", stack: "HTML / CSS / JavaScript", image: loveQuiz, demo: "https://kareena2070.github.io/project-do-you-love-me-/", github: "https://github.com/Kareena2070/project-do-you-love-me-" },
   ];
 
   return (
-    <>
-      <div className="container my-5" id="projects" data-aos="zoom-in">
-        <h1 className="text-center my-4">Projects</h1>
-        <div className="row">
-          {projects.map((project, index) => (
-            <div className="col-md-4 pt-4" key={index}>
-              <div className="card h-100 shadow-lg pt-2">
-                <img src={project.image} alt={project.title} />
-                <div className="card-body">
-                  <h3>{project.title}</h3>
-                  <p>{project.description}</p>
-                  <h6>Tech Stack: {project.techStack}</h6>
-                  <a
-                    href={project.demo}
-                    target="blank "
-                    className="btn btn-dark"
-                  >
-                    Live Demo{" "}
-                  </a>
-                  <a
-                    href={project.github}
-                    target="blank "
-                    className="btn btn-dark m-1"
-                  >
-                    GitHub
-                  </a>
-                </div>
-              </div>
+    <section id="more-projects" className="projects-section" style={{ paddingTop: 40 }}>
+      <div className="site-shell">
+        <div className="section-heading"><div><p className="eyebrow">More from the archive</p><h2 className="display-title" style={{ fontSize: "clamp(50px, 7vw, 92px)" }}>More projects</h2></div><p className="section-heading-note">Small experiments and focused builds, each one a chance to learn by making.</p></div>
+        <div className="project-list">
+          {projects.map((project, index) => <article className="project-entry" key={project.title}>
+            <div className="project-content">
+              <div className="project-meta"><span className="project-number">{String(index + 6).padStart(2, "0")}</span><span className="project-category">Independent build</span></div>
+              <h3 className="project-title">{project.title}</h3>
+              <p className="project-description">{project.description}</p>
+              <p className="project-tech">{project.stack}</p>
+              <div style={{ display: "flex", gap: 22 }}><a className="text-link" href={project.demo} target="_blank" rel="noopener noreferrer">Live project ↗</a><a className="text-link" href={project.github} target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
             </div>
-          ))}
+            <a className="project-visual" href={project.demo} target="_blank" rel="noopener noreferrer" aria-label={`View ${project.title}`}><img src={project.image} alt={project.title} loading="lazy"/><span className="project-arrow" aria-hidden="true">↗</span></a>
+          </article>)}
         </div>
       </div>
-    </>
+    </section>
   );
 }
-
 export default ProjectSection;

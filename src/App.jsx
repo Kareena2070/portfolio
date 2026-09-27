@@ -1,41 +1,29 @@
-
-
-  import profile from './assets/profile.jpeg'
-  import Navbar from './component/navbar'
-  import HeroSection from './component/hero'
-  import SkillSection from './component/skills'
-  import ProjectSection from './component/project'
-  import Experience from './component/experience'
-  import Contact from './component/contact'
-  import Stats from "./component/Stats";
-  import FeaturedProjects from './component/FeaturedProjects'
-  import CurrentlyBuilding from './component/CurrentlyBuilding'
-
-  // import ContactForm from './component/emailjs'
- 
+import profile from './assets/profile.jpeg'
+import Navbar from './component/navbar'
+import HeroSection from './component/hero'
+import About from './component/About'
+import SkillSection from './component/skills'
+import Experience from './component/experience'
+import Contact from './component/contact'
+import Stats from "./component/Stats";
+import FeaturedProjects from './component/FeaturedProjects'
+import AllProjects from './component/AllProjects'
 
 function App() {
-
+  if (window.location.pathname === '/projects') return <AllProjects />
 
   return (
     <>
-    {/* <Navbar/> */}
-    <HeroSection
-    img ={profile}
-    />
-    <Stats/>
-    <FeaturedProjects/>
-    <SkillSection/>
-    <CurrentlyBuilding/>
-    {/* <ProjectSection/> */}
-    <Experience/>
-    <Contact/>
-
-
-    {/*   Emailjs code */}
-
-      {/* <ContactForm/> */}
-     
+      <Navbar />
+      <main>
+        <HeroSection img={profile} />
+        <Stats />
+        <About />
+        <FeaturedProjects />
+        <SkillSection />
+        <Experience />
+      </main>
+      <Contact />
     </>
   )
 }

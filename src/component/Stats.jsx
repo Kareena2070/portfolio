@@ -1,37 +1,15 @@
 function Stats() {
   const stats = [
-    {
-      number: "3+",
-      title: "Production Projects",
-    },
-    {
-      number: "2",
-      title: "Freelance Client Delivered",
-    },
-    {
-      number: "15+",
-      title: "Technologies Used",
-    },
-    // {
-    //   number: "1500+",
-    //   title: "Hours Learning & Building",
-    // },
+    { number: "03+", title: "Production projects" },
+    { number: "02", title: "Freelance client deliveries" },
+    { number: "15+", title: "Technologies used" },
   ];
-
   return (
-    <section className="container py-5">
-      <div className="row text-center">
-        {stats.map((item, index) => (
-          <div className="col-md-4 mb-3" key={index}>
-            <div className="border rounded-4 p-4 shadow-sm h-100">
-              <h1 className="fw-bold">{item.number}</h1>
-              <p>{item.title}</p>
-            </div>
-          </div>
-        ))}
+    <section className="site-shell" aria-label="Portfolio statistics">
+      <div className="stats-strip">
+        {stats.map((item) => <div className="stat-item" key={item.title}><span className="stat-number">{item.number}</span><span className="stat-label">{item.title}</span></div>)}
       </div>
     </section>
   );
 }
-
 export default Stats;
